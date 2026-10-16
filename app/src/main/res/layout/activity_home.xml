@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16213E">
+
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/app_icon"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color Gate Escape"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#F4F2FA"
+        app:layout_constraintTop_toBottomOf="@id/homeLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="PLAY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E24B4A"
+        app:cornerRadius="70dp"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:id="@+id/levelSelectButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Level Select"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0F3460"
+        app:layout_constraintTop_toBottomOf="@id/playButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0F3460"
+        app:layout_constraintTop_toBottomOf="@id/levelSelectButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/leaderboardButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Leaderboard"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0F3460"
+        app:layout_constraintTop_toBottomOf="@id/settingsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
